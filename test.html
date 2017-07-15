@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+  
+  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+<style>
+
+.navbar {
+ background: rgba(255, 255, 255, 0.1);
+ }
+ 
+ 
+ 
+ .navbar-toggle
+{
+    position:relative;
+    float:right;
+    padding:9px 10px;
+    margin-top:8px;
+    margin-right:15px;
+    margin-bottom:8px;
+    background-color:transparent;
+    background-image:none;
+    border:1px solid #444;          /* added line */
+    border-radius:4px
+}
+
+.icon-bar
+{
+    display:block;
+    width:22px;
+    height:2px;
+    border-radius:1px;
+    border:1px solid #444;
+}
+
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('flower.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.middle {
+  transition: .5s ease;
+    position: absolute;
+
+  opacity: 0;
+  
+}
+
+.sub:hover .image {
+  opacity: 0.3;
+}
+
+.sub:hover .middle {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 16px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.footer {
+  background: #061D25;
+  padding: 10px 0;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+</style>
+
+</head>
+<body>
+
+   <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+   
+        <nav class="navbar " >
+            <div class="container-fluid">
+                <div class="navbar-header" class="navbar-header" style="font-family:impact;color:white">
+		            <!-- <img class="img-rounded" src="new.png" style="height=55px;width:200px"> -->
+				    <h3>Sample Page</h3>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+           </div>
+        </nav>
+		
+        <div class="container-fluid">
+            <div class="row content">
+                <div class="col-xs-3 sidenav hidden-xs">
+                    <ul class="nav nav-pills nav-stacked">
+                    
+					<li data-toggle="modal" data-target="#myModal" ><a href="#section1">Discover</a></li>
+			        <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                       <button type="button" class="close" data-dismiss="modal">&times;</button>
+                       <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+	      
+           		    <li><a href="#section2">Read</a></li>
+                    <li><a href="#section3">Post</a></li>
+                    <li><a href="#section3">Share</a></li>
+                    </ul><br>
+					
+                    <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    </span>
+                    </div>
+                </div>
+		
+		        <div class="col-sm-9">
+				
+		    	   <div class="row">
+		                <div class="col-sm-4">
+			    		   <div class="sub">
+                           <img src="discover.jpg" alt="Avatar" class="image" style="width: 100%";>
+                           <div class="middle">
+                   		   <h2><img src="bino.png" style="height:50px; width:50px"></h2>
+                           <h3>Discover</h3>
+                           <p>Find new friends from across the globe and discover their stories</p>
+				           </div>
+                           </div>
+                        </div>
+						
+		                <div class="col-sm-4">
+                            <img src="read.jpg" alt="Chicago" style="width:100%;">
+				            <h2><span class="glyphicon glyphicon-eye-open"></span></h2>
+		                    <h3>Read</h3>
+                            <p>Read stories, follow new people. Get inspired and acknowledge what motivated you via comments</p>
+		                </div>
+			
+		                <div class="col-sm-4">
+                            <img src="write.jpg" alt="New York" style="width:100%;">
+                            <h2><span class="glyphicon glyphicon-pencil"></span></h2>
+                            <h3>Post</h3>
+                            <p>Help people regain their faith in humanity. Pen down your experiences and let 'em know</p>
+		                </div>
+			       </div>
+				   
+			       <div class="row">
+			            <div class="col-sm-4">
+                            <img src="share.jpg" alt="New York" style="width:100%;">
+        		            <h2><span class="glyphicon glyphicon-share"></span></h2>
+                            <h3>Share</h3>
+                            <p>The world needs as much compassion as it can get. Do your part and spread the word</p>
+		                </div>
+		           </div>
+                </div>
+		    </div>
+        </div>
+	
+        <footer style="background: rgba(255, 255, 255, 0.1);">
+              <div class="container text-center">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-skype"></i></a>
+  </div>
+			
+			
+	    </footer>
+ 
+    </div>
+</body>
+</html>
+
+
